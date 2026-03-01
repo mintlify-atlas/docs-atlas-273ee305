@@ -1,0 +1,134 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "HytaleKt",
+  "projectDescription": "Kotlin extensions and DSLs for ergonomic Hytale server plugin development",
+  "theme": "aspen",
+  "primaryColor": "#7C3AED",
+  "lightColor": "#A78BFA",
+  "darkColor": "#5B21B6",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/commands",
+              "concepts/events",
+              "concepts/coroutines"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/ecs-components",
+              "guides/entity-systems",
+              "guides/items",
+              "guides/interactions",
+              "guides/ui-pages"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": [
+              "api/commands/player-command-builder",
+              "api/commands/command-registration"
+            ]
+          },
+          {
+            "group": "Events",
+            "pages": [
+              "api/events/event-registration"
+            ]
+          },
+          {
+            "group": "Coroutines",
+            "pages": [
+              "api/coroutines/plugin-coroutines",
+              "api/coroutines/dispatchers",
+              "api/coroutines/world-coroutines"
+            ]
+          },
+          {
+            "group": "ECS",
+            "pages": [
+              "api/ecs/component-codec",
+              "api/ecs/component-registration",
+              "api/ecs/system-registration",
+              "api/ecs/query-extensions"
+            ]
+          },
+          {
+            "group": "Items",
+            "pages": [
+              "api/items/item-stack-builder",
+              "api/items/inventory-extensions"
+            ]
+          },
+          {
+            "group": "Interactions",
+            "pages": [
+              "api/interactions/interaction-dsl",
+              "api/interactions/interaction-handlers"
+            ]
+          },
+          {
+            "group": "UI",
+            "pages": [
+              "api/ui/page-extensions"
+            ]
+          },
+          {
+            "group": "Core",
+            "pages": [
+              "api/core/message-extensions",
+              "api/core/collection-extensions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Type-safe command DSL builders",
+    "Reified generic event registration",
+    "Component codec DSL for ECS serialization",
+    "Coroutine support with Hytale dispatchers",
+    "ItemStack builder with metadata support",
+    "Interaction DSL for entity interactions",
+    "UI page extensions"
+  ],
+  "publicApiSurface": [
+    "playerCommand()",
+    "registerEvent<T>()",
+    "registerGlobalEvent<T>()",
+    "componentCodec<T>()",
+    "registerComponent<T>()",
+    "registerSystem<T>()",
+    "itemStack()",
+    "pluginScope",
+    "launch()",
+    "launchAsync()",
+    "launchIO()",
+    "HytaleDispatchers.async",
+    "HytaleDispatchers.io",
+    "interaction{}",
+    "withWorld{}",
+    "msg()",
+    "sendMessage()"
+  ]
+}
